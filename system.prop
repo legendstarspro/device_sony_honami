@@ -1,0 +1,18 @@
+# Graphics
+ro.sf.lcd_density=480
+
+# USB path
+ro.usb.pid_suffix=19E
+
+# Ril
+ro.use_data_netmgrd=true
+ro.ril.enable.amr.wideband=1
+
+# Semc
+ro.semc.product.model=C6903
+ro.semc.ms_type_id=PM-0450-BV
+ro.semc.version.fs=GLOBAL-LTE
+ro.semc.product.name=Xperia Z1
+ro.semc.product.device=C69
+ro.semc.version.cust=1276-7951
+ro.semc.version.cust_revision=R2D 
