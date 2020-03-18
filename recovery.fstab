@@ -1,0 +1,12 @@
+#mountpoint      fstype            device                                                  [options]
+
+/boot            emmc              /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery        emmc              /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel
+/system_root     ext4              /dev/block/platform/msm_sdcc.1/by-name/system           flags=display="System"
+/cache           ext4              /dev/block/platform/msm_sdcc.1/by-name/cache
+/data            ext4              /dev/block/platform/msm_sdcc.1/by-name/userdata	   length=-16384
+/ta              emmc              /dev/block/platform/msm_sdcc.1/by-name/TA               flags=display="Trim Area";backup=1
+/system_img      emmc              /dev/block/platform/msm_sdcc.1/by-name/system           flags=display="System";flashimg=1
+/external_sd     auto              /dev/block/mmcblk1p1 /dev/block/mmcblk1                 flags=display="External SD"
+#/sd_ext_p2       vfat              /dev/block/mmcblk1p2                                    #flags=display="Ext_SD_P2";canbewiped;storage;wipeingui;removable;backup=1
+/usb-otg         vfat              /dev/block/sda1     /dev/block/sda                      flags=removable;storage;display=USB-OTG
