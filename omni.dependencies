@@ -1,7 +1,7 @@
 [
  {
    "remote": "github",
-   "repository": "Remim7/kernel_sony_msm8974",
+   "repository": "NyQuilXT/kernel_sony_msm8974",
    "target_path": "kernel/sony/msm8974",
    "revision": "q10.0"
  }

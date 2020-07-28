@@ -67,13 +67,20 @@ RECOVERY_SDCARD_ON_DATA := true
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
+# USB Storage
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file
+
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_BRIGHTNESS_PATH := "/sys/class/leds/wled-backlight/brightness"
-TW_EXCLUDE_TWRPAPP := true
-TW_INCLUDE_CRYPTO := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_MAX_BRIGHTNESS := 255
-TW_SCREEN_BLANK_ON_BOOT := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_THEME := portrait_hdpi
+TW_BRIGHTNESS_PATH := "/sys/class/leds/wled:backlight/brightness"
+TW_SECONDARY_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 128
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TW_EXCLUDE_TWRPAPP := true
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_CRYPTO := true
